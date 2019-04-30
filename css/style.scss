@@ -1,0 +1,42 @@
+.catalog_menu{
+    .list-group{
+        .list-group-item{
+            padding: 0;
+            a{
+                margin: .35rem .5rem;
+                display: inline-block;
+                color: #777;
+                text-decoration: unset;
+                &:hover{
+                    color: #972222;
+                }
+
+                + .list-group{
+                    display: none;
+                }
+            }
+            &.active{
+                border: 1px solid !important;
+                background-color: #ff3333 !important;
+                border-color: #d22d2d !important;
+                > a{
+                    color: #fff;
+
+                    + .list-group{
+                        display: block;
+                    }
+                }
+                .list-group-item{
+                    a{
+                        color: #777;
+                    }
+                }
+            }
+            .list-group-item{
+                border: unset;
+                border-radius: unset;
+                border-top: 1px solid rgba(0,0,0,.125);
+            }
+        }
+    }
+}
